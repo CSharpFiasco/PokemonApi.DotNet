@@ -1,0 +1,1 @@
+﻿:r .\PostDeployment\SeedPokemon.PostDeployment.sql

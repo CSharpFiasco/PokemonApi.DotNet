@@ -1,0 +1,58 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "PokemonDatabaseContext",
+   "ContextNamespace": "Repository.Context",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": "Domain.Models",
+   "OutputContextPath": "..\/Pokemon.Repository\/Context",
+   "OutputPath": "..\/Pokemon.Domain\/Models",
+   "ProjectRootNamespace": "Pokemon",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[DamageClass]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Move]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MoveMethod]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Pokemon]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PokemonMove]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Type]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "Pokemon.Database\\Pokemon.Database.sqlproj",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
