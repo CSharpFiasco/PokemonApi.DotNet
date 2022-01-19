@@ -11,20 +11,95 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{31A460E8-0B41-413A-A7A9-8DF7118428EA}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{096AA0E0-FD02-4C6B-8A1F-28B95909AD57}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PokemonDatabase]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D6AD92A7-77C9-45E2-9A75-7A399B0E2999}"
+      DTS:ObjectName="PokemonDatabase">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PokemonConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Server=.\SQLEXPRESS;Provider=MSOLEDBSQL;Database=Pokemon;Trusted_Connection=yes;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PokemonMoveFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{29BB9743-3ED8-4748-8B4A-28CCF9CCC43F}"
+      DTS:ObjectName="PokemonMoveFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pokemon_id"
+              DTS:DTSID="{3894F435-5F2E-4575-A822-31AE011B9F05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="move_id"
+              DTS:DTSID="{6FB99749-C3A9-46AF-96C5-C76754D12CD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pokemon_move_method_id"
+              DTS:DTSID="{0DBFA66A-E52B-4D48-BF53-308ABA558012}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="level"
+              DTS:DTSID="{9825E6E9-B973-4E0B-8CEA-81812F8F3AFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order"
+              DTS:DTSID="{27EFB02D-5702-4601-8021-89C339298019}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8AF428F0-F32D-45CD-884C-63EEE8611CE2}"
+      DTS:DTSID="{6712D959-6E71-403E-A1FA-44520D332370}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PokemonConnectionString">
       <DTS:VariableValue
-        DTS:DataType="8"
-        xml:space="preserve"></DTS:VariableValue>
+        DTS:DataType="8">Provider=MSOLEDBSQL;Server=.\SQLEXPRESS;Database=Pokemon;Trusted_Connection=yes;</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
