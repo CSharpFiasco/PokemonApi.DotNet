@@ -7,7 +7,7 @@ SET XACT_ABORT ON;
 
 SET IDENTITY_INSERT [dbo].[Type] ON;
 
-INSERT INTO [Type]
+INSERT INTO [Type] (Id, Identifier)
 VALUES
     (1, 'normal'),
     (2, 'fighting'),

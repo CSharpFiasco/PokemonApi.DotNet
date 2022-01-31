@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[MoveMethod]
 (
     [Id] INT NOT NULL IDENTITY,
-    [Identifier] VARCHAR(10) NOT NULL,
+    [Identifier] VARCHAR(23) NOT NULL,
     CONSTRAINT [PK_MoveMethod] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 

@@ -8,7 +8,7 @@ SET XACT_ABORT ON;
 
 SET IDENTITY_INSERT [Move] ON;
 
-INSERT INTO [Move] VALUES
+INSERT INTO [Move] (Id, Identifier, TypeId, [Power], PP, Accuracy, [Priority], DamageClassId) VALUES
 (1, 'pound', 1, 40, 35, 100, 0, 2),
 (2, 'karate-chop', 2, 50, 25, 100, 0, 2),
 (3, 'double-slap', 1, 15, 10, 85, 0, 2),

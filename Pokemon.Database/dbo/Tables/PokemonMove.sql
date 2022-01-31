@@ -2,8 +2,10 @@
 (
     [PokemonId] INT NOT NULL,
     [MoveId] INT NOT NULL,
+    [MoveMethodId] INT NOT NULL,
     [Level] INT NOT NULL,
-    CONSTRAINT [PK_PokemonMove] PRIMARY KEY CLUSTERED ([PokemonId] ASC, [MoveId] ASC)
+    [Order] INT NULL,
+    CONSTRAINT [PK_PokemonMove] PRIMARY KEY CLUSTERED ([PokemonId] ASC, [MoveId] ASC, [MoveMethodId] ASC, [Level] ASC)
 );
 
 GO
@@ -11,6 +13,9 @@ ALTER TABLE [PokemonMove] ADD CONSTRAINT [FK_PokemonMove_Pokemon] FOREIGN KEY ([
 
 GO
 ALTER TABLE [PokemonMove] ADD CONSTRAINT [FK_PokemonMove_Move] FOREIGN KEY ([MoveId]) REFERENCES [Move]([Id])
+
+GO
+ALTER TABLE [PokemonMove] ADD CONSTRAINT [FK_PokemonMove_MoveMethod] FOREIGN KEY ([MoveMethodId]) REFERENCES [MoveMethod]([Id])
 
 GO
 CREATE NONCLUSTERED INDEX [IX_PokemonMove01] ON [dbo].[PokemonMove]([PokemonId] ASC);

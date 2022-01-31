@@ -16,12 +16,14 @@
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetFrameworkProfile />
+    <QueryStoreCaptureMode>None</QueryStoreCaptureMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -45,6 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -61,11 +64,12 @@
     <Folder Include="PostDeployments" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="PostDeployments\SeedPokemon.PostDeployment.sql" />
-    <None Include="PostDeployment.sql" />
+    <PostDeploy Include="PostDeployment.sql" />
     <None Include="PostDeployments\SeedType.PostDeployment.sql" />
     <None Include="PostDeployments\SeedDamageClass.PostDeployment.sql" />
     <None Include="PostDeployments\SeedMove.PostDeployment.sql" />
+    <None Include="PostDeployments\SeedMoveMethod.PostDeployment.sql" />
+    <None Include="PostDeployments\SeedPokemon.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Pokemon.sql" />
@@ -74,5 +78,8 @@
     <Build Include="dbo\Tables\Move.sql" />
     <Build Include="dbo\Tables\PokemonMove.sql" />
     <Build Include="dbo\Tables\MoveMethod.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokemon.Database.publish.xml" />
   </ItemGroup>
 </Project>

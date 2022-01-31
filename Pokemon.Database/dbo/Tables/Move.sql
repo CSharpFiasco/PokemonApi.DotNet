@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Move]
 (
     [Id] INT NOT NULL IDENTITY,
-    [Identifier] VARCHAR(10) NOT NULL,
+    [Identifier] VARCHAR(32) NOT NULL,
     [TypeId] TINYINT NOT NULL,
     [Power] SMALLINT NULL,
     [PP] SMALLINT NOT NULL,
