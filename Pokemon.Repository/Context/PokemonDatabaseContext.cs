@@ -52,7 +52,7 @@ namespace Pokemon.Repository.Context
 
                 entity.Property(e => e.Identifier)
                     .IsRequired()
-                    .HasMaxLength(10)
+                    .HasMaxLength(32)
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.DamageClass)
@@ -75,7 +75,7 @@ namespace Pokemon.Repository.Context
 
                 entity.Property(e => e.Identifier)
                     .IsRequired()
-                    .HasMaxLength(10)
+                    .HasMaxLength(23)
                     .IsUnicode(false);
             });
 
@@ -89,7 +89,7 @@ namespace Pokemon.Repository.Context
 
             modelBuilder.Entity<PokemonMove>(entity =>
             {
-                entity.HasKey(e => new { e.PokemonId, e.MoveId });
+                entity.HasKey(e => new { e.PokemonId, e.MoveId, e.MoveMethodId, e.Level });
 
                 entity.HasIndex(e => e.PokemonId, "IX_PokemonMove01");
 
@@ -100,6 +100,12 @@ namespace Pokemon.Repository.Context
                     .HasForeignKey(d => d.MoveId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_PokemonMove_Move");
+
+                entity.HasOne(d => d.MoveMethod)
+                    .WithMany(p => p.PokemonMove)
+                    .HasForeignKey(d => d.MoveMethodId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_PokemonMove_MoveMethod");
 
                 entity.HasOne(d => d.Pokemon)
                     .WithMany(p => p.PokemonMove)

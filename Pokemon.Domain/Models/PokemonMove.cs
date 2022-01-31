@@ -9,9 +9,12 @@ namespace Pokemon.Domain.Models
     {
         public int PokemonId { get; set; }
         public int MoveId { get; set; }
+        public int MoveMethodId { get; set; }
         public int Level { get; set; }
+        public int? Order { get; set; }
 
         public virtual Move Move { get; set; }
+        public virtual MoveMethod MoveMethod { get; set; }
         public virtual Pokemon Pokemon { get; set; }
     }
 }

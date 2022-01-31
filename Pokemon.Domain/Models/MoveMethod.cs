@@ -7,7 +7,14 @@ namespace Pokemon.Domain.Models
 {
     public partial class MoveMethod
     {
+        public MoveMethod()
+        {
+            PokemonMove = new HashSet<PokemonMove>();
+        }
+
         public int Id { get; set; }
         public string Identifier { get; set; }
+
+        public virtual ICollection<PokemonMove> PokemonMove { get; set; }
     }
 }

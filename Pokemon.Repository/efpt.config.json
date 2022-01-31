@@ -38,7 +38,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "Pokemon.Database\\Pokemon.Database.sqlproj",
+   "UiHint": "DESKTOP-GKA10OO\\SQLEXPRESS.Pokemon",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": true,
    "UseDbContextSplitting": false,

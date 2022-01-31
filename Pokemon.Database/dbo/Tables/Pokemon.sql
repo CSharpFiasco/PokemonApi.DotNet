@@ -11,3 +11,6 @@
 );
 
 GO
+CREATE NONCLUSTERED INDEX [IX_Pokemon01] ON [dbo].[Pokemon]([Id] ASC, [Identifier] ASC, [Height] ASC, [Weight] ASC, [BaseExperience] ASC, [Order] ASC, [IsDefault] ASC);
+
+GO
