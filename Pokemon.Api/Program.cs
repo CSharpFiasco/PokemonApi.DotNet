@@ -21,7 +21,7 @@ services.AddDbContext<PokemonDatabaseContext>(opts =>
 
 services.AddScoped<IPokemonRepository, PokemonRepository>();
 
-services.AddControllers().AddOData(options => options.Select().Expand().Filter().OrderBy()); ;
+services.AddControllers().AddOData(options => options.EnableQueryFeatures(100));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen(c =>
