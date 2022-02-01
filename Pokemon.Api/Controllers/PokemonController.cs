@@ -1,19 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Pokemon.Repository.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.OData.Results;
 
 namespace Pokemon.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PokemonController : ControllerBase
+    public class PokemonController : ODataController
     {
         private readonly IPokemonRepository PokemonRepository;
         public PokemonController(IPokemonRepository pokemonRepository)
@@ -22,11 +16,20 @@ namespace Pokemon.Api.Controllers
             PokemonRepository = pokemonRepository;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        [EnableQuery]
-        public IQueryable<Domain.Models.Pokemon> Get()
+        [HttpGet]
+        [EnableQuery(MaxExpansionDepth = 2)]
+        public ActionResult<IQueryable<Domain.Models.Pokemon>> Get()
         {
-            return PokemonRepository.Get().AsNoTracking();
+            return Ok(PokemonRepository.Get().AsNoTracking());
+        }
+
+        [HttpGet]
+        [EnableQuery(MaxExpansionDepth = 2)]
+        public ActionResult<Domain.Models.Pokemon> Get(int key)/* By odata convention, this has to be key */
+        {
+            var pokemon = PokemonRepository.Get().Where(p => p.Id == key);
+
+            return Ok(SingleResult.Create(pokemon));
         }
     }
 }

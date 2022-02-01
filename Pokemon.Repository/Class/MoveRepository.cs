@@ -1,20 +1,21 @@
-﻿using Pokemon.Repository.Context;
+﻿using Pokemon.Domain.Models;
+using Pokemon.Repository.Context;
 using Pokemon.Repository.Interface;
 
 namespace Pokemon.Repository.Class
 {
-    public class PokemonRepository : IPokemonRepository
+    public class MoveRepository : IMoveRepository
     {
         private readonly PokemonDatabaseContext Context;
-        public PokemonRepository(PokemonDatabaseContext context)
+        public MoveRepository(PokemonDatabaseContext context)
         {
             ArgumentNullException.ThrowIfNull(context);
 
             Context = context;
         }
-        public IQueryable<Domain.Models.Pokemon> Get()
+        public IQueryable<Move> Get()
         {
-            return Context.Pokemon.AsQueryable();
+            return Context.Move.AsQueryable();
         }
     }
 }

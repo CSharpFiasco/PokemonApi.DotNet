@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OData.Edm;
 using NLog.Web;
+using Pokemon.Api.Configuration;
 using Pokemon.Repository.Class;
 using Pokemon.Repository.Context;
 using Pokemon.Repository.Interface;
@@ -20,8 +22,14 @@ services.AddDbContext<PokemonDatabaseContext>(opts =>
 });
 
 services.AddScoped<IPokemonRepository, PokemonRepository>();
+services.AddScoped<IMoveRepository, MoveRepository>();
 
-services.AddControllers().AddOData(options => options.EnableQueryFeatures(100));
+IEdmModel model = EdmModelConfiguration.GetEdmModel();
+
+services.AddControllers().AddOData(options => {
+    options.EnableQueryFeatures(100).AddRouteComponents("v1", model);
+    options.RouteOptions.EnableKeyAsSegment = false;
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen(c =>

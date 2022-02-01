@@ -2,14 +2,19 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pokemon.Domain.Models
 {
     public partial class PokemonMove
     {
+        [Key]
         public int PokemonId { get; set; }
+        [Key]
         public int MoveId { get; set; }
+        [Key]
         public int MoveMethodId { get; set; }
+        [Key]
         public int Level { get; set; }
         public int? Order { get; set; }
 
