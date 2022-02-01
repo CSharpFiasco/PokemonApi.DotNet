@@ -27,7 +27,7 @@ namespace Pokemon.Api.Controllers
         [EnableQuery(MaxExpansionDepth = 2)]
         public ActionResult<Domain.Models.Pokemon> Get(int key)/* By odata convention, this has to be key */
         {
-            var pokemon = PokemonRepository.Get().Where(p => p.Id == key);
+            var pokemon = PokemonRepository.Get().Where(p => p.Id == key).AsNoTracking();
 
             return Ok(SingleResult.Create(pokemon));
         }
