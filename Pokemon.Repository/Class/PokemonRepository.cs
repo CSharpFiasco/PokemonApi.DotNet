@@ -5,16 +5,16 @@ namespace Pokemon.Repository.Class
 {
     public class PokemonRepository : IPokemonRepository
     {
-        private readonly PokemonDatabaseContext Context;
+        private readonly PokemonDatabaseContext _context;
         public PokemonRepository(PokemonDatabaseContext context)
         {
             ArgumentNullException.ThrowIfNull(context);
 
-            Context = context;
+            _context = context;
         }
         public IQueryable<Domain.Models.Pokemon> Get()
         {
-            return Context.Pokemon.AsQueryable();
+            return _context.Pokemon.AsQueryable();
         }
     }
 }

@@ -6,16 +6,16 @@ namespace Pokemon.Repository.Class
 {
     public class MoveRepository : IMoveRepository
     {
-        private readonly PokemonDatabaseContext Context;
+        private readonly PokemonDatabaseContext _context;
         public MoveRepository(PokemonDatabaseContext context)
         {
             ArgumentNullException.ThrowIfNull(context);
 
-            Context = context;
+            _context = context;
         }
         public IQueryable<Move> Get()
         {
-            return Context.Move.AsQueryable();
+            return _context.Move.AsQueryable();
         }
     }
 }
