@@ -908,6 +908,6 @@ INSERT INTO [Pokemon] (Id, Identifier, Height, [Weight], [BaseExperience], [Orde
 (897, 'spectrier', 20, 445, 290, NULL, 1),
 (898, 'calyrex', 11, 77, 250, NULL, 1);
 
-SET IDENTITY_INSERT [Pokemon] ON;
+SET IDENTITY_INSERT [Pokemon] OFF;
 
 COMMIT TRANSACTION

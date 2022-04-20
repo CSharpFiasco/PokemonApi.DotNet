@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{1C8381EB-2906-44CB-AC50-CC4FC6AA4E8F}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{AC73B72A-CBC3-4A4E-B224-461FA0C05C02}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -87,7 +87,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Server=.\SQLEXPRESS;Provider=MSOLEDBSQL;Database=Pokemon;Trusted_Connection=yes;" />
+          DTS:ConnectionString="Server=.;Provider=MSOLEDBSQL;Database=Pokemon;Trusted_Connection=yes;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -159,7 +159,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="PokemonConnectionString">
       <DTS:VariableValue
-        DTS:DataType="8">Provider=MSOLEDBSQL;Server=.\SQLEXPRESS;Database=Pokemon;Trusted_Connection=yes;</DTS:VariableValue>
+        DTS:DataType="8">Provider=MSOLEDBSQL;Server=.;Database=Pokemon;Trusted_Connection=yes;</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -765,10 +765,6 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination"
-          TopLeft="189.999992450078,297.26666902913" />
-        <NodeLayout
           Size="112.8,41.6"
           Id="Package\Pokemon Import\Seed PokemonMove\Lookup"
           TopLeft="222.499991158645,166.400001322428" />
@@ -776,6 +772,32 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
           Size="151.2,41.6"
           Id="Package\Pokemon Import\Seed PokemonMove\Flat File Source"
           TopLeft="201.666658653154,65.866667190128" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination"
+          TopLeft="189.999992450078,297.26666902913" />
+        <EdgeLayout
+          Id="Package\Pokemon Import\Seed PokemonMove.Paths[Flat File Source Output]"
+          TopLeft="278.083324905899,107.466667190128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.9333341323005"
+              Start="0,0"
+              End="0,51.4333341323005">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.4333341323005" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Pokemon Import\Seed PokemonMove.Paths[Lookup No Match Output]"
           TopLeft="277.249991804362,208.000001322428">
@@ -796,37 +818,36 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-64.6750390625,32.8833338533509,169.12078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Pokemon Import\Seed PokemonMove.Paths[Flat File Source Output]"
-          TopLeft="278.083324905899,107.466667190128">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.9333341323005"
-              Start="0,0"
-              End="0,51.4333341323005">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.4333341323005" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-36.59123046875,17.7166670661503,73.1824609375,16"
+              BoundingBox="-64.6750390625,32.8833338533509,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Pokemon Import\Seed PokemonMove\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[PokemonMove]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination">
     <Properties>
@@ -837,29 +858,6 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Pokemon Import\Seed PokemonMove\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[PokemonMove]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
