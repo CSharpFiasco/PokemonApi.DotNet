@@ -18,14 +18,14 @@ namespace Pokemon.Api.Controllers
 
         [HttpGet]
         [EnableQuery(MaxExpansionDepth = 2)]
-        public ActionResult<IQueryable<Domain.Models.Pokemon>> Get()
+        public IActionResult Get()
         {
             return Ok(_pokemonRepository.Get().AsNoTracking());
         }
 
         [HttpGet]
         [EnableQuery(MaxExpansionDepth = 2)]
-        public ActionResult<Domain.Models.Pokemon> Get(int key)/* By odata convention, this has to be key */
+        public IActionResult Get(int key)/* By odata convention, this has to be key */
         {
             var pokemon = _pokemonRepository.Get().Where(p => p.Id == key).AsNoTracking();
 

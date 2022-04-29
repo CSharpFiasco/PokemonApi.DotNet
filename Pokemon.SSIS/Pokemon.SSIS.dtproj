@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-GKA10OO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0XQZ9yPNCE6VgSmoeIZm9wAAAAACAAAAAAAQZgAAAAEAACAAAACvOuhbKsuvnxty+L4lC1YgjB1nMqO88pEOZjoLThXnPgAAAAAOgAAAAAIAACAAAABnPi1z8+AldG6sqe6l2N0+xHhblpncVN/bnd3141N7B5AAAADNqmoU+jQp2YQuE480Diq2vOqiXf+pV65XGqDet4UEo8ZGhutT2GeWqnz6/lLE/NgPiYql7d1IEfgokPOwONcrLsSrC+tjgdUGcZxr/qfS2/Af7TzXKeGTlATfotb9FA/LmxthiozmbuMAgDghZN4vk5qRbadASM/fZfNrAjDhdHgIzEX1ypS4VVmBp/7RdoZAAAAAyWn8r/+1iNT+/MZ27YniEGMx4F9u7TaAtL0V0Z/gS5bQgVzPDuBIiqSNbNETBShROMIOKFmgzooQWdv0UGoyWg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0XQZ9yPNCE6VgSmoeIZm9wAAAAACAAAAAAAQZgAAAAEAACAAAADai/Tx8aP+8R5iMxr6l82ceFuYNfVUVOaMOhfAgp5bJwAAAAAOgAAAAAIAACAAAADxS3Y+1Ct8Lg+1VHNwGJCTod5u7WwR66/oa6GBZV1daJAAAADPNe2mW9DH1vc+vBCRDlPuHuOBNmnt0vrJyczOQp/qUidVzvz1HEQVo9RY6+QsupiAhZ2BCT3/aN7P6gNQGdIb36kGinxfq2OnP4tRSJbXTv9jytjb4Pn8dvyhB8MvObvoPLCO82LnvALx2d6zWNSbagTRqqhA9FgYjZyxnOq/pWzNhTEeTYtxTMO8apkDIS1AAAAAxCeSVSdFNMJuXV+9j2MrOX7R74cDQaCCy1SufvE3sd0fAkz3qoGlKO8/Ylk6FUvHE9rktNzJK5yCooHjvWV4pQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AC73B72A-CBC3-4A4E-B224-461FA0C05C02}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AE21D4FD-D78D-4FED-B2DD-EC11D1F3317E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -123,7 +123,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\carlo\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -452,7 +452,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\carlo\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

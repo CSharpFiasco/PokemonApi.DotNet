@@ -38,7 +38,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "DESKTOP-GKA10OO\\SQLEXPRESS.Pokemon",
+   "UiHint": "DESKTOP-GKA10OO.Pokemon",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": true,
    "UseDbContextSplitting": false,

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{AC73B72A-CBC3-4A4E-B224-461FA0C05C02}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{AE21D4FD-D78D-4FED-B2DD-EC11D1F3317E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv">
+          DTS:ConnectionString="C:\Users\carlo\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pokemon_id"
-              DTS:DTSID="{11505F15-3F23-4890-81EF-61B83C161728}"
+              DTS:DTSID="{397A50D0-122B-40C7-82AB-2060A09D8E59}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -46,7 +46,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="move_id"
-              DTS:DTSID="{CCAAD30B-2568-44BD-8E2D-180F25E84747}"
+              DTS:DTSID="{B10F3F38-D9E2-4A7A-B161-4E0B9DD27FC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -54,7 +54,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pokemon_move_method_id"
-              DTS:DTSID="{B4A87E46-D023-46C4-BF4B-965136AF2AF5}"
+              DTS:DTSID="{BEB85225-73E0-47FF-AA25-E33E9D0EE434}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -62,7 +62,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="level"
-              DTS:DTSID="{4972B3FC-2AA3-4EFF-B3ED-5069014DB830}"
+              DTS:DTSID="{F68B6D99-5098-4F15-BCD2-8A40AF3C4C37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -70,7 +70,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="order"
-              DTS:DTSID="{E2D73666-5502-4931-A63F-08C25E46E762}"
+              DTS:DTSID="{DDAA75F3-9CD8-472E-A4FB-E490A36A0AD8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -104,7 +104,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv">
+          DTS:ConnectionString="C:\Users\carlo\source\repos\PokemonApi.Dotnet\Pokemon.SSIS\pokemon_moves.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pokemon_id"
-              DTS:DTSID="{3894F435-5F2E-4575-A822-31AE011B9F05}"
+              DTS:DTSID="{DC490130-36C8-485E-83A1-5AA76C72C6B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="move_id"
-              DTS:DTSID="{6FB99749-C3A9-46AF-96C5-C76754D12CD4}"
+              DTS:DTSID="{D3B917A9-BF69-49A7-A67E-89904651B471}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +128,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pokemon_move_method_id"
-              DTS:DTSID="{0DBFA66A-E52B-4D48-BF53-308ABA558012}"
+              DTS:DTSID="{4DA1AE05-BB7E-4AA6-9061-B05F4AE27663}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +136,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="level"
-              DTS:DTSID="{9825E6E9-B973-4E0B-8CEA-81812F8F3AFE}"
+              DTS:DTSID="{5BE7B70E-E087-4B74-B19B-CB45A5E80AC7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +144,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="order"
-              DTS:DTSID="{27EFB02D-5702-4601-8021-89C339298019}"
+              DTS:DTSID="{BCC86BC6-7EC1-4F80-A77A-2AF2B6457C31}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -795,7 +795,9 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-15.45359375,20.9324873786503,30.9071875,9.568359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -818,7 +820,7 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-64.6750390625,32.8833338533509,111.6127734375,11.609375"
+              BoundingBox="-64.6750390625,32.8833338533509,151.3834765625,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

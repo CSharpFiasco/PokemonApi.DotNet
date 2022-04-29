@@ -40,11 +40,12 @@ services.AddSwaggerGen(c =>
 var app = builder.Build();
 var environment = app.Environment;
 
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // Configure the HTTP request pipeline.
 if (environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
     app.UseODataRouteDebug();
 }
 
