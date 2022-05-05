@@ -18,7 +18,7 @@ namespace Pokemon.Api.Controllers
         }
 
         [HttpGet]
-        [EnableQuery(MaxExpansionDepth = 2)]
+        [EnableQuery(PageSize = 100, MaxExpansionDepth = 2)]
         public IActionResult Get()
         {
             return Ok(_moveRepository.Get().AsNoTracking());

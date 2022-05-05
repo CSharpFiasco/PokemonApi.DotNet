@@ -26,7 +26,10 @@ services.AddScoped<IMoveRepository, MoveRepository>();
 
 IEdmModel model = EdmModelConfiguration.GetEdmModel();
 
-services.AddControllers().AddOData(options => {
+services.AddCors(opt => opt.AddPolicy("localhost", policy => policy.WithOrigins("https://localhost:4200")));
+
+services.AddControllers().AddOData(options =>
+{
     options.EnableQueryFeatures(100).AddRouteComponents("v1", model);
     options.RouteOptions.EnableKeyAsSegment = false;
 });
@@ -47,6 +50,8 @@ app.UseSwaggerUI();
 if (environment.IsDevelopment())
 {
     app.UseODataRouteDebug();
+    app.UseCors("localhost");
+    
 }
 
 app.UseHttpsRedirection();

@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Pokemon list</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!pokemonList"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<table *ngIf="pokemonList">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Height</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemonList">
+      <td>{{ pokemon.Identifier }}</td>
+      <td>{{ pokemon.Height }}</td>
+      <td>{{ pokemon.Weight }}</td>
+    </tr>
+  </tbody>
+</table>
