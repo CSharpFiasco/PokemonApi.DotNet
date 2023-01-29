@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-GKA10OO\carlo"
   DTS:DTSID="{570BFA71-FB86-4F5C-8559-C925BCCA46D5}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{AE21D4FD-D78D-4FED-B2DD-EC11D1F3317E}">
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{24972576-AD2F-4E59-B3FC-461C9242FFB3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -188,12 +188,12 @@
               version="1">
               <components>
                 <component
-                  refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source"
+                  refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
                   localeId="1033"
-                  name="Flat File Source"
+                  name="CSV FIle Source"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -208,23 +208,23 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Connections[FlatFileConnection]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                       connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_id]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_id]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_id]"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_id]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_id]"
                           name="pokemon_id"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -239,12 +239,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[move_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[move_id]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[move_id]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[move_id]"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[move_id]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[move_id]"
                           name="move_id"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -259,12 +259,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_move_method_id]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_move_method_id]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]"
                           name="pokemon_move_method_id"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -279,12 +279,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[level]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[level]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[level]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[level]"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[level]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[level]"
                           name="level"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -299,12 +299,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[order]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[order]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[order]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[order]"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[order]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[order]"
                           name="order"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -322,49 +322,49 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_id]"
                           dataType="i4"
                           name="pokemon_id" />
                         <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[move_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[move_id]"
                           dataType="i4"
                           name="move_id" />
                         <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_move_method_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[pokemon_move_method_id]"
                           dataType="i4"
                           name="pokemon_move_method_id" />
                         <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[level]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[level]"
                           dataType="i4"
                           name="level" />
                         <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[order]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].ExternalColumns[order]"
                           dataType="i4"
                           name="order" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -373,11 +373,164 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Pokemon Import\Seed PokemonMove\Lookup"
+                  refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Import To PokemonMove Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[PokemonMove]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[PokemonDatabase]"
+                      connectionManagerRefId="Package.ConnectionManagers[PokemonDatabase]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].Columns[level]"
+                          cachedDataType="i4"
+                          cachedName="level"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[level]" />
+                        <inputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].Columns[order]"
+                          cachedDataType="i4"
+                          cachedName="order"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[order]" />
+                        <inputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].Columns[pokemon_id]"
+                          cachedDataType="i4"
+                          cachedName="pokemon_id"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[PokemonId]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_id]" />
+                        <inputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].Columns[move_id]"
+                          cachedDataType="i4"
+                          cachedName="move_id"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveId]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[move_id]" />
+                        <inputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].Columns[pokemon_move_method_id]"
+                          cachedDataType="i4"
+                          cachedName="pokemon_move_method_id"
+                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveMethodId]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[PokemonId]"
+                          dataType="i4"
+                          name="PokemonId" />
+                        <externalMetadataColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveId]"
+                          dataType="i4"
+                          name="MoveId" />
+                        <externalMetadataColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveMethodId]"
+                          dataType="i4"
+                          name="MoveMethodId" />
+                        <externalMetadataColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level]"
+                          dataType="i4"
+                          name="Level" />
+                        <externalMetadataColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
+                          dataType="i4"
+                          name="Order" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove"
                   componentClassID="Microsoft.Lookup"
                   contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
                   description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="Lookup"
+                  name="Match Against PokemonMove"
                   usesDispositions="true"
                   version="6">
                   <properties>
@@ -386,13 +539,13 @@
                       description="Specifies the SQL statement that generates the lookup table."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[PokemonMove]</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[PokemonMove]</property>
                     <property
                       dataType="System.String"
                       description="Specifies a SQL statement that uses parameters to generate the lookup table."
                       expressionType="Notify"
                       name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[PokemonMove]) [refTable]
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[PokemonMove]) [refTable]
 where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[MoveMethodId] = ? and [refTable].[Level] = ?</property>
                     <property
                       dataType="System.Int32"
@@ -429,7 +582,7 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_id]};#{Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[move_id]};#{Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]};#{Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[level]};</property>
+                      name="ParameterMap">#{Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_id]};#{Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[move_id]};#{Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]};#{Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[level]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -441,7 +594,7 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Connections[OleDbConnection]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[PokemonDatabase]"
                       connectionManagerRefId="Package.ConnectionManagers[PokemonDatabase]"
                       description="Connection manager used to access lookup data."
@@ -449,14 +602,14 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input]"
                       name="Lookup Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input].Columns[pokemon_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input].Columns[pokemon_id]"
                           cachedDataType="i4"
                           cachedName="pokemon_id"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_id]">
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_id]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -469,10 +622,10 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input].Columns[move_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input].Columns[move_id]"
                           cachedDataType="i4"
                           cachedName="move_id"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[move_id]">
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[move_id]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -485,10 +638,10 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input].Columns[pokemon_move_method_id]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input].Columns[pokemon_move_method_id]"
                           cachedDataType="i4"
                           cachedName="pokemon_move_method_id"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]">
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -501,10 +654,10 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input].Columns[level]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input].Columns[level]"
                           cachedDataType="i4"
                           cachedName="level"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[level]">
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output].Columns[level]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -522,191 +675,38 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Match Output]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
                       exclusionGroup="1"
                       name="Lookup Match Output"
-                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup No Match Output]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup No Match Output]"
                       description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                       exclusionGroup="1"
                       name="Lookup No Match Output"
-                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Error Output]"
+                      refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="Lookup Error Output"
-                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          refId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="OLE DB Destination"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[PokemonMove]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[PokemonDatabase]"
-                      connectionManagerRefId="Package.ConnectionManagers[PokemonDatabase]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[level]"
-                          cachedDataType="i4"
-                          cachedName="level"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[level]" />
-                        <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[order]"
-                          cachedDataType="i4"
-                          cachedName="order"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[order]" />
-                        <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pokemon_id]"
-                          cachedDataType="i4"
-                          cachedName="pokemon_id"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PokemonId]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_id]" />
-                        <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[move_id]"
-                          cachedDataType="i4"
-                          cachedName="move_id"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveId]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[move_id]" />
-                        <inputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pokemon_move_method_id]"
-                          cachedDataType="i4"
-                          cachedName="pokemon_move_method_id"
-                          externalMetadataColumnId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveMethodId]"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output].Columns[pokemon_move_method_id]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PokemonId]"
-                          dataType="i4"
-                          name="PokemonId" />
-                        <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveId]"
-                          dataType="i4"
-                          name="MoveId" />
-                        <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveMethodId]"
-                          dataType="i4"
-                          name="MoveMethodId" />
-                        <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level]"
-                          dataType="i4"
-                          name="Level" />
-                        <externalMetadataColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
-                          dataType="i4"
-                          name="Order" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -718,14 +718,14 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
               <paths>
                 <path
                   refId="Package\Pokemon Import\Seed PokemonMove.Paths[Flat File Source Output]"
-                  endId="Package\Pokemon Import\Seed PokemonMove\Lookup.Inputs[Lookup Input]"
+                  endId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Inputs[Lookup Input]"
                   name="Flat File Source Output"
-                  startId="Package\Pokemon Import\Seed PokemonMove\Flat File Source.Outputs[Flat File Source Output]" />
+                  startId="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source.Outputs[Flat File Source Output]" />
                 <path
                   refId="Package\Pokemon Import\Seed PokemonMove.Paths[Lookup No Match Output]"
-                  endId="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  endId="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination.Inputs[OLE DB Destination Input]"
                   name="Lookup No Match Output"
-                  startId="Package\Pokemon Import\Seed PokemonMove\Lookup.Outputs[Lookup No Match Output]" />
+                  startId="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove.Outputs[Lookup No Match Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -765,62 +765,60 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Pokemon Import\Seed PokemonMove\Lookup"
-          TopLeft="222.499991158645,166.400001322428" />
+          Size="216,41.6"
+          Id="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove"
+          TopLeft="22.3,107.1" />
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Pokemon Import\Seed PokemonMove\Flat File Source"
-          TopLeft="201.666658653154,65.866667190128" />
+          Size="156,41.6"
+          Id="Package\Pokemon Import\Seed PokemonMove\CSV FIle Source"
+          TopLeft="54.7,5.49999999999995" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination"
-          TopLeft="189.999992450078,297.26666902913" />
+          Size="249.6,41.6"
+          Id="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination"
+          TopLeft="5.50000000000004,208.7" />
         <EdgeLayout
           Id="Package\Pokemon Import\Seed PokemonMove.Paths[Flat File Source Output]"
-          TopLeft="278.083324905899,107.466667190128">
+          TopLeft="131.5,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,58.9333341323005"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,51.4333341323005">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.4333341323005" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.45359375,20.9324873786503,30.9071875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Pokemon Import\Seed PokemonMove.Paths[Lookup No Match Output]"
-          TopLeft="277.249991804362,208.000001322428">
+          TopLeft="130.3,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,89.2666677067018"
+              EndConnector="0,60.0000000000001"
               Start="0,0"
-              End="0,81.7666677067018">
+              End="0,52.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,81.7666677067018" />
+                    End="0,52.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-64.6750390625,32.8833338533509,151.3834765625,11.609375"
+              BoundingBox="-172.20638671875,35.0000000000001,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -828,7 +826,7 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Pokemon Import\Seed PokemonMove\Lookup">
+    design-time-name="Package\Pokemon Import\Seed PokemonMove\Match Against PokemonMove">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -851,7 +849,7 @@ where [refTable].[PokemonId] = ? and [refTable].[MoveId] = ? and [refTable].[Mov
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Pokemon Import\Seed PokemonMove\OLE DB Destination">
+    design-time-name="Package\Pokemon Import\Seed PokemonMove\Import To PokemonMove Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
