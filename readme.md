@@ -1,6 +1,7 @@
 ﻿# Pokemon API
 
 This API is meant for learning purposes
+
 All data comes from the [pokeAPI](https://github.com/PokeAPI/pokeapi)
 
 The API uses .NET 7, odata, entity framework, swagger/swashbuckle, with xunit as the testing framework

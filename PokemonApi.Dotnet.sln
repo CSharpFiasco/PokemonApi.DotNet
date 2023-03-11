@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Api", "Pokemon.Api\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pokemon.Database", "Pokemon.Database\Pokemon.Database.sqlproj", "{227EC9C8-A6A1-4D89-A6C5-FF003E0D761D}"
 EndProject
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Pokemon.SSIS", "Pokemon.SSIS\Pokemon.SSIS.dtproj", "{AA512E13-4E30-4237-9883-C725442142A1}"
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Pokemon.SSIS", "Pokemon.SSIS\Pokemon.SSIS.dtproj", "{AA512E13-4E30-4237-9883-C725442142A1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Domain", "Pokemon.Domain\Pokemon.Domain.csproj", "{9405977F-310F-46D2-8FFA-800509FF34E3}"
 EndProject
@@ -15,6 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Repository", "Pokem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFAA9ACE-294A-4166-85C5-F94679295613}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		readme.md = readme.md
 	EndProjectSection
 EndProject
